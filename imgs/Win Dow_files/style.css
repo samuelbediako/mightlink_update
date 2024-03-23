@@ -1,0 +1,522 @@
+*{
+	padding: 0px;
+	margin:0;
+	font-family: Arial;
+	
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+	width: 100vw;
+	height: 100%;
+	
+}
+
+.nav-bar{
+	width:100vw;
+	height:60px;
+	background-color:rgba(255, 0, 0, 0);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	backdrop-filter: blur(10px);
+}
+
+.nav-bar ul{
+	display: flex;
+}
+
+.nav-bar ul li{
+	margin:0 7px;
+	list-style-type: none;
+}
+
+.nav-bar ul li a{
+	text-decoration:none;
+	color:#fff;
+	font-weight: 600;
+	text-shadow:2px -2px black, -2px 2px black;
+	transition: all .5s ease-in-out;
+}
+
+.nav-bar ul li a:hover{
+	text-decoration: underline;
+	color: aliceblue;
+}
+
+.nav-bar h2{
+	text-shadow:2px -2px black, -2px 2px black;
+	color:#fff;
+}
+
+.page-one{
+	width:100%;
+	height: 100vh;
+	background-image:url("imgs/win9.jpg");
+	background-attachment: scroll;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	position: relative;
+}
+
+.overlay{
+	width:100%;
+	height: 100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:rgba(0, 0, 0, 0.307);
+	backdrop-filter: blur(.5px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay-text{
+	width:40%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	padding:0 20px;
+	
+}
+
+.overlay-text h1{
+	text-shadow:2px -2px black, -2px 2px black;
+	font-size: 3.5rem;
+	color:#fff;
+}
+
+.overlay-text p{
+	text-shadow:1px -1px black, -1px 1px black;
+	color:#fff;
+}
+
+.overlay-text button{
+	border: 1px solid black;
+	background-color:black;
+	padding:10px 15px;
+}
+
+.overlay-text button a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.overlay-formm{
+	width:40%;
+	height: 400px;
+	padding:0 0 0 90px;
+	
+}
+
+.overlay-formm form{
+	width:300px;
+	height:400px;
+	background-color: #fff;
+	padding: 0 30px;
+	border-radius:5px;
+	display:flex;
+	flex-direction:column;
+	
+}
+
+.overlay-formm form div{
+	width:90%;
+	height:40px;
+	border: 1px solid gray;
+	margin:8px 0;
+	display: flex;
+	align-items:center;
+	padding:0 7px;
+}
+
+.overlay-formm form div i{
+	color:gray;
+}
+
+.overlay-formm form div input{
+	outline:none;
+	border:1px solid transparent;
+	margin:0 5px;
+	
+}
+
+.overlay-formm form button{
+	padding:10px 30px;
+	background-color:goldenrod;
+	border:1px solid transparent;
+	margin:20px 0 0 0;
+	cursor:pointer;
+}
+
+
+.page-two{
+	width:100%;
+	height: 90vh;
+	background-color:rgb(246, 245, 237);
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	padding:10px 0;
+}
+
+.pt-top{
+	width:90%;
+	height: 50%;
+	display:flex;
+}
+
+.left-text-div{
+	width:50%;
+	height: 100%;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:center;
+}
+
+.left-text-div p{
+	font-family:serif;
+	margin:0 0 5px 0;
+}
+
+.left-text-div h1{
+	font-size:3rem;
+}
+
+.right-text-div{
+	width:50%;
+	height: 100%;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:center;
+	color:gray;
+}
+
+.pt-bottom{
+	width:90%;
+	height: 50%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.qualities{
+  width:200px;
+  height:80%;
+  display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:space-evenly;
+  border: 1px solid transparent;
+  border-right-color:gray;
+}
+
+.qualities img{
+  width:30%;
+  height: 120px;
+  object-fit:contain;
+}
+
+.qualities p{
+  font-weight:600;
+}
+
+.qualities i{
+  cursor:pointer;
+}
+
+
+.page-three{
+  width:100%;
+  height: 100vh;
+}
+
+.ptr-top{
+  width:100%;
+  height: 80%;
+  display:flex;  
+}
+
+.ptr-top .left{
+  width:50%;
+  height: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.ptr-top .left .pic{
+  width:200px;
+  height:300px;
+  position:relative;
+  background-image:url("imgs/win9.jpg");
+	background-attachment: scroll;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+.ptr-top .left .pic::before{
+  content:"";
+  position:absolute;
+  top:150px;
+  left:100px;
+  width:200px;
+  height:200px;
+  background-image:url("imgs/win4.jpg");
+	background-attachment: scroll;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+.ptr-top .right{
+  width:50%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  padding:0 150px 0 0;
+}
+
+.ptr-top .right h1{
+  font-size:3rem;
+}
+
+.ptr-top .right a{
+  padding:13px 40px;
+  text-decoration:none;
+  color:black;
+  background-color:goldenrod;
+  border-radius:3px;
+}
+
+
+
+.ptr-down{
+  width:100%;
+  height: 20%;
+   display: flex;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.ptr-down h1{
+  border:1px solid transparent;
+  width:100px;
+  height:100px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  font-size:4rem;
+  border-right-color:gray;
+  color:rgba(128, 128, 128, 0.297);
+  position: relative;
+}
+
+.ptr-down h1::before{
+  content:"People";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  font-size:1rem;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  color:black;
+}
+
+
+.ptr-down h2{
+  border:1px solid transparent;
+  width:100px;
+  height:100px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  font-size:4rem;
+  border-right-color:gray;
+  color:rgba(128, 128, 128, 0.297);
+  position: relative;
+}
+
+.ptr-down h2::before{
+  content:"Appartment";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  font-size:1rem;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  color:black;
+}
+
+.ptr-down h3{
+  border:1px solid transparent;
+  width:100px;
+  height:100px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  font-size:4rem;
+  border-right-color:gray;
+  color:rgba(128, 128, 128, 0.297);
+  position: relative;
+}
+
+.ptr-down h3::before{
+  content:"Houses";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  font-size:1rem;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  color:black;
+}
+
+
+.ptr-down h4{
+  border:1px solid transparent;
+  width:100px;
+  height:100px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  font-size:4rem;
+  border-right-color:gray;
+  color:rgba(128, 128, 128, 0.297);
+  position: relative;
+}
+
+.ptr-down h4::before{
+  content:"Offices";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  font-size:1rem;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  color:black;
+}
+
+
+.page-four{
+  width:100%;
+  height:100vh;
+}
+
+.pf-top{
+  width:100%;
+  height:80%;
+  display:flex;
+}
+
+.pf-top .left{
+  width:50%;
+  height:100%;
+  display:flex;
+}
+
+.pf-top .left .mini-left{
+   width:50%;
+  height:100%;
+}
+
+.pf-top .left .mini-left img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.pf-top .left .mini-right{
+   width:50%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.pf-top .left .mini-right img{
+   width:100%;
+  height:50%;
+  object-fit:cover;
+}
+
+.pf-top .right{
+  width:50%;
+  height:100%;
+}
+
+
+.pf-top .right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.pf-bottom{
+   width:100%;
+  height:20%;
+  background-color:goldenrod;
+  display:flex;
+}
+
+.pf-bottom .left{
+  width:50%;
+  height:100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 40px;
+}
+
+.pf-bottom .right{
+  width:50%;
+  height:100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.pf-bottom .right .black{
+  padding:10px 20px;
+  margin:0 5px;
+  outline:none;
+  border:1px solid black;
+  background-color:black;
+  color:#fff;
+}
+
+.pf-bottom .right .transp{
+  padding:10px 20px;
+  margin:0 5px;
+  outline:none;
+  border:2px solid black;
+  background-color:transparent;
+}
